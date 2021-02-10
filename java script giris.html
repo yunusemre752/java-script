@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>js 1</title>
+<meta chareset="UTF-8">
+<style>
+    label{
+     display: block;
+     border-bottom:10px;    
+     }    
+</style>    
+</head>
+<body>
+<h1>JS TOPLAMA</h1>
+<form>
+<label> sayi 1:
+<input type="text" id="s1">
+</label>    
+<label>sayi 2:
+<input type="text" id="s2">    
+</label>
+<input type="button" value="Topla" id="hesap">
+</form>
+<div id="toplama"></div>   
+<script>
+var sayi1=document.getElementById("s1");
+var sayi2=document.getElementById("s2");
+var hesapBtn=document.getElementById("hesap");
+var sonuc=document.getElementById("toplama");
+    hesapBtn.onclick=function(){
+    var toplam=Number(sayi1.value)+Number(sayi2.value);
+     toplama.innerHTML=toplam; 
+    } 
+</script>    
+</body>        
+</html>    
